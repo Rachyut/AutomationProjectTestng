@@ -1,0 +1,19 @@
+package pages;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class TestBase {
+	
+	WebDriver driver;
+	
+	public void init() {
+		
+		System.setProperty("webdriver.chrome.driver","Driver\\chromedriver.exe");
+		driver = new ChromeDriver();
+		driver.manage()
+		
+	}
+	
+
+}

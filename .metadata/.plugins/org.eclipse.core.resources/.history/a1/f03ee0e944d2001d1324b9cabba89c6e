@@ -1,0 +1,16 @@
+package pages;
+
+import org.openqa.selenium.WebDriver;
+
+public class BackgroundColorPage {
+	
+	WebDriver driver;
+	public BackgroundColorPage(WebDriver driver) {
+		this.driver = driver;
+	}
+
+	@FindBy(how using)
+	
+	
+	
+}

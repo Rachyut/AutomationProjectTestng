@@ -1,0 +1,102 @@
+package junitProject;
+
+import java.util.concurrent.TimeUnit;
+
+import org.junit.Before;
+import org.junit.Test;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+import junit.framework.Assert;
+
+public class ValidationOfSteps {
+
+	WebDriver driver;
+	
+	@Before
+	public void init() {
+		
+		System.setProperty("webdriver.chrome.driver","Driver\\chromedriver.exe");
+		driver = new ChromeDriver();
+		driver.manage().deleteAllCookies();
+		driver.get(" http://techfios.com/test/101/");
+		driver.manage().window().maximize();
+		driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);
+	}
+		@Test
+	public void validation1() {
+		
+		driver.findElement(By.cssSelector("input[name='allbox'")).click();
+		try {
+			Thread.sleep(2000);
+		} catch (InterruptedException e1) {
+			// TODO Auto-generated catch block
+			e1.printStackTrace();
+		}
+		
+		WebElement ToggleallCheck_Element = driver.findElement(By.cssSelector("input[name='allbox'"));
+		
+		Assert.assertTrue("All Checkbox are not checked",ToggleallCheck_Element.isDisplayed());
+		}
+		
+		@Test
+		public void validation2() {
+		
+	   driver.findElement(By.cssSelector("input[name='data']")).sendKeys("RachanaBox");
+	   driver.findElement(By.cssSelector("input[value='Add']")).click();   
+		driver.findElement(By.cssSelector("input[name='todo[1]']")).click();
+		try {
+			Thread.sleep(2000);
+		} catch (InterruptedException e) {
+						e.printStackTrace();
+		}
+		
+	
+		
+		driver.findElement(By.cssSelector("input[value='Remove'")).click();
+		try {
+		Thread.sleep(2000);
+		} catch (InterruptedException e) {
+						e.printStackTrace();
+		}		
+		WebElement SelectTheItemToremove_Element = driver.findElement(By.cssSelector("input[name='todo[3]'"));
+		WebElement RemoveTheSelectedItem_Element = driver.findElement(By.cssSelector("input[value='Remove'"));
+		
+		Assert.assertTrue("Selected item not removed",RemoveTheSelectedItem_Element.isDisplayed());
+		}
+		
+		@Test
+		public void validation3() {
+		
+		
+		driver.findElement(By.cssSelector("input[name='allbox'")).click();
+		try {
+////			Thread.sleep(2000);
+////		} catch (InterruptedException e) {
+////			// TODO Auto-generated catch block
+////			e.printStackTrace();
+////		}
+////		
+////		driver.findElement(By.cssSelector("input[value='Remove'")).click();
+////		try {
+////			Thread.sleep(2000);
+////		} catch (InterruptedException e) {
+////			// TODO Auto-generated catch block
+////			e.printStackTrace();
+////		}
+////		
+////		WebElement ToggleallCheck_Element = driver.findElement(By.cssSelector("input[name='allbox'"));
+////		WebElement RemoveTheSelectedItem_Element = driver.findElement(By.cssSelector("input[value='Remove'"));
+////		
+////		Assert.assertTrue("All item not removed",RemoveTheSelectedItem_Element.isDisplayed());
+////		
+////
+////		
+////		
+////		
+////	}
+////	
+		}
+}

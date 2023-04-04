@@ -1,0 +1,16 @@
+package steps;
+
+import org.openqa.selenium.WebDriver;
+
+import pages.BackgroundColorPage;
+import pages.TestBase;
+
+public class BackgroundColorSteps extends TestBase{
+	BackgroundColorPage backgroundcolorpage;
+
+	
+	public void beforeRun() {
+		init();
+	}
+
+}

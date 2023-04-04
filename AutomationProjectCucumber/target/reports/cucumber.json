@@ -1,0 +1,175 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2023-04-03T18:47:01.960Z",
+        "before": [
+          {
+            "result": {
+              "duration": 2721000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "steps.BackgroundColorSteps.beforeRun()"
+            }
+          }
+        ],
+        "line": 5,
+        "name": "User should be able to change the background color to blue.",
+        "description": "",
+        "id": "validation-for-the-background-changing-colors.;user-should-be-able-to-change-the-background-color-to-blue.",
+        "after": [
+          {
+            "result": {
+              "duration": 675000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "steps.BackgroundColorSteps.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 5000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User is on the set SkyBlue Background button",
+            "match": {
+              "location": "steps.BackgroundColorSteps.user_is_on_the_set_SkyBlue_Background_button()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2057000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User clicks on the set SkyBlue Background button",
+            "match": {
+              "location": "steps.BackgroundColorSteps.user_clicks_on_the_set_SkyBlue_Background_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "The background color should change to sky blue",
+            "match": {
+              "location": "steps.BackgroundColorSteps.the_background_color_should_change_to_sky_blue()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Regression"
+          },
+          {
+            "name": "@Scenario1"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2023-04-03T18:47:07.483Z",
+        "before": [
+          {
+            "result": {
+              "duration": 2119000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "steps.BackgroundColorSteps.beforeRun()"
+            }
+          }
+        ],
+        "line": 11,
+        "name": "User should be able to change the background color to white.",
+        "description": "",
+        "id": "validation-for-the-background-changing-colors.;user-should-be-able-to-change-the-background-color-to-white.",
+        "after": [
+          {
+            "result": {
+              "duration": 660000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "steps.BackgroundColorSteps.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "User is on the set SkyWhite Background button",
+            "match": {
+              "location": "steps.BackgroundColorSteps.user_is_on_the_set_SkyWhite_Background_button()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 53000000,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "User clicks on the set SkyWhite Background button",
+            "match": {
+              "location": "steps.BackgroundColorSteps.user_clicks_on_the_set_SkyWhite_Background_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "The background color should change to White",
+            "match": {
+              "location": "steps.BackgroundColorSteps.the_background_color_should_change_to_White()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Regression"
+          },
+          {
+            "name": "@Scenario2"
+          }
+        ]
+      }
+    ],
+    "name": "Validation for the background changing colors.",
+    "description": "",
+    "id": "validation-for-the-background-changing-colors.",
+    "keyword": "Feature",
+    "uri": "classpath:feature/Backgroundcolour.feature",
+    "tags": [
+      {
+        "name": "@Regression",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]

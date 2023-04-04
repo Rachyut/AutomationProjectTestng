@@ -1,0 +1,13 @@
+package finalExam;
+
+public class RandomNumber {
+
+	public static void main(String[] args) {
+	
+		int numbers [] = {2,6,20,4};
+		
+		int largest = numbers[0];
+
+	}
+
+}

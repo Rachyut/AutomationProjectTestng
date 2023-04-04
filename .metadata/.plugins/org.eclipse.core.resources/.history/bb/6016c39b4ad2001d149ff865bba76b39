@@ -1,0 +1,24 @@
+package steps;
+
+import org.openqa.selenium.support.PageFactory;
+
+import io.cucumber.java.Before;
+import pages.BackgroundColorPage;
+import pages.TestBase;
+
+public class BackgroundColorSteps extends TestBase{
+	BackgroundColorPage backgroundcolorpage;
+
+	@Before
+	public void beforeRun() {
+		init();
+		backgroundcolorpage = PageFactory.initElements(driver,BackgroundColorPage.class);
+	}
+	
+	@Given("User is on the set SkyBlue Background button")
+		
+	
+	
+	
+
+}

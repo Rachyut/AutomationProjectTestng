@@ -1,0 +1,5 @@
+
+Feature: Validation for the background changing colors.
+
+Scenario: User should be able to change the background color to blue.
+Given User is on the " 

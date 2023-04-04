@@ -1,0 +1,4 @@
+
+Feature: Validation for the background changing colors.
+
+Scenario: User should be able to change the background color with given color options.
